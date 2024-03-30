@@ -18,13 +18,22 @@ class TransferTask implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i < 30; i++) {
-            int amount = random.nextInt(1000); // Сумма для перевода от 0 до 999
+            int num = i + 1; // Номер транзакции
+            int amount = random.nextInt(10000); // Сумма для перевода от 0 до 9999
             synchronized (from) {
                 synchronized (to) {
                     if (from.getMoney() >= amount) {
                         from.withdraw(amount);
                         to.deposit(amount);
-                        log.info("Transaction: {} -> {}, Amount: {}", from.getID(), to.getID(), amount);
+                        log.info("Transaction №" + num +
+                            ": " + from.getId() + " -> " + to.getId() +
+                            ", Amount: " + amount +
+                            ". " + from.getId() + " balance: " + from.getMoney() +
+                            ". " + to.getId() + " balance: " + to.getMoney());
+                    } else {
+                        log.warn("Account " + from.getId() + " dont have enough money for Transaction " +
+                            "№" + num + ". " + from.getId() + " balance: " + from.getMoney() +
+                            ". Amount: " + amount);
                     }
                 }
             }

@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 class Account {
-    private final String ID;
+    private String id;
     private int money;
 
     public void withdraw(int amount) {
@@ -16,5 +16,9 @@ class Account {
 
     public void deposit(int amount) {
         money += amount;
+    }
+
+    public String getId() {
+        return "a" + id;
     }
 }

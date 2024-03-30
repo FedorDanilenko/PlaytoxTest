@@ -1,0 +1,110 @@
+2024-03-30 16:18:46.532 [main] INFO  org.example.Main - Starting Main using Java 17.0.9 on fedora with PID 20359 (/mnt/STUFF/JAVA/PlaytoxTest/PlaytoxTest/build/classes/java/main started by john_morgan in /mnt/STUFF/JAVA/PlaytoxTest/PlaytoxTest)
+2024-03-30 16:18:46.534 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2024-03-30 16:18:47.055 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-03-30 16:18:47.062 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-03-30 16:18:47.063 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2024-03-30 16:18:47.118 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-03-30 16:18:47.118 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 551 ms
+2024-03-30 16:18:47.169 [main] INFO  org.example.StarterWorker - Total balance before transactions: 70000
+2024-03-30 16:18:47.178 [pool-1-thread-2] INFO  org.example.TransferTask - Transaction №1: a2 -> a5, Amount: 1769. a2 balance: 8231. a5 balance: 11769
+2024-03-30 16:18:47.178 [pool-1-thread-3] INFO  org.example.TransferTask - Transaction №1: a3 -> a6, Amount: 7090. a3 balance: 2910. a6 balance: 17090
+2024-03-30 16:18:47.178 [pool-1-thread-1] INFO  org.example.TransferTask - Transaction №1: a1 -> a4, Amount: 5357. a1 balance: 4643. a4 balance: 15357
+2024-03-30 16:18:48.187 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №2. a3 balance: 2910. Amount: 7827
+2024-03-30 16:18:48.573 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №2. a1 balance: 4643. Amount: 6749
+2024-03-30 16:18:49.028 [pool-1-thread-2] INFO  org.example.TransferTask - Transaction №2: a2 -> a5, Amount: 81. a2 balance: 8150. a5 balance: 11850
+2024-03-30 16:18:49.639 [pool-1-thread-1] INFO  org.example.TransferTask - Transaction №3: a1 -> a4, Amount: 786. a1 balance: 3857. a4 balance: 16143
+2024-03-30 16:18:49.866 [pool-1-thread-3] INFO  org.example.TransferTask - Transaction №3: a3 -> a6, Amount: 1706. a3 balance: 1204. a6 balance: 18796
+2024-03-30 16:18:50.369 [pool-1-thread-2] INFO  org.example.TransferTask - Transaction №3: a2 -> a5, Amount: 2657. a2 balance: 5493. a5 balance: 14507
+2024-03-30 16:18:50.927 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №4. a3 balance: 1204. Amount: 5291
+2024-03-30 16:18:51.197 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №4. a1 balance: 3857. Amount: 9988
+2024-03-30 16:18:52.153 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №4. a2 balance: 5493. Amount: 5882
+2024-03-30 16:18:52.231 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №5. a3 balance: 1204. Amount: 4450
+2024-03-30 16:18:52.422 [pool-1-thread-1] INFO  org.example.TransferTask - Transaction №5: a1 -> a4, Amount: 3743. a1 balance: 114. a4 balance: 19886
+2024-03-30 16:18:53.314 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №5. a2 balance: 5493. Amount: 7737
+2024-03-30 16:18:53.446 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №6. a3 balance: 1204. Amount: 4184
+2024-03-30 16:18:53.476 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №6. a1 balance: 114. Amount: 9447
+2024-03-30 16:18:54.382 [pool-1-thread-2] INFO  org.example.TransferTask - Transaction №6: a2 -> a5, Amount: 5111. a2 balance: 382. a5 balance: 19618
+2024-03-30 16:18:54.604 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №7. a3 balance: 1204. Amount: 5737
+2024-03-30 16:18:55.144 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №7. a1 balance: 114. Amount: 6424
+2024-03-30 16:18:55.649 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №7. a2 balance: 382. Amount: 9500
+2024-03-30 16:18:56.108 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №8. a3 balance: 1204. Amount: 9662
+2024-03-30 16:18:57.089 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №8. a1 balance: 114. Amount: 6901
+2024-03-30 16:18:57.192 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №8. a2 balance: 382. Amount: 6334
+2024-03-30 16:18:57.212 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №9. a3 balance: 1204. Amount: 1969
+2024-03-30 16:18:58.576 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №9. a1 balance: 114. Amount: 6539
+2024-03-30 16:18:58.778 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №10. a3 balance: 1204. Amount: 8425
+2024-03-30 16:18:58.845 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №9. a2 balance: 382. Amount: 4960
+2024-03-30 16:18:59.935 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №11. a3 balance: 1204. Amount: 2367
+2024-03-30 16:19:00.019 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №10. a1 balance: 114. Amount: 5106
+2024-03-30 16:19:00.334 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №10. a2 balance: 382. Amount: 4016
+2024-03-30 16:19:01.541 [pool-1-thread-3] INFO  org.example.TransferTask - Transaction №12: a3 -> a6, Amount: 526. a3 balance: 678. a6 balance: 19322
+2024-03-30 16:19:01.619 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №11. a1 balance: 114. Amount: 9826
+2024-03-30 16:19:01.715 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №11. a2 balance: 382. Amount: 1311
+2024-03-30 16:19:02.736 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №12. a1 balance: 114. Amount: 9359
+2024-03-30 16:19:03.047 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №12. a2 balance: 382. Amount: 8452
+2024-03-30 16:19:03.102 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №13. a3 balance: 678. Amount: 4930
+2024-03-30 16:19:04.088 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №13. a1 balance: 114. Amount: 7653
+2024-03-30 16:19:04.363 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №14. a3 balance: 678. Amount: 2431
+2024-03-30 16:19:04.837 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №13. a2 balance: 382. Amount: 5812
+2024-03-30 16:19:05.853 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №14. a1 balance: 114. Amount: 9396
+2024-03-30 16:19:05.915 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №14. a2 balance: 382. Amount: 4639
+2024-03-30 16:19:06.339 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №15. a3 balance: 678. Amount: 4672
+2024-03-30 16:19:06.860 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №15. a1 balance: 114. Amount: 3821
+2024-03-30 16:19:07.473 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №16. a3 balance: 678. Amount: 1486
+2024-03-30 16:19:07.537 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №15. a2 balance: 382. Amount: 5983
+2024-03-30 16:19:08.660 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №16. a2 balance: 382. Amount: 9521
+2024-03-30 16:19:08.719 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №16. a1 balance: 114. Amount: 3770
+2024-03-30 16:19:08.832 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №17. a3 balance: 678. Amount: 5692
+2024-03-30 16:19:09.728 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №17. a1 balance: 114. Amount: 9556
+2024-03-30 16:19:09.840 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №17. a2 balance: 382. Amount: 2388
+2024-03-30 16:19:10.281 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №18. a3 balance: 678. Amount: 6489
+2024-03-30 16:19:11.437 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №18. a1 balance: 114. Amount: 3973
+2024-03-30 16:19:11.809 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №18. a2 balance: 382. Amount: 4383
+2024-03-30 16:19:11.923 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №19. a3 balance: 678. Amount: 8212
+2024-03-30 16:19:13.011 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №20. a3 balance: 678. Amount: 2179
+2024-03-30 16:19:13.308 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №19. a1 balance: 114. Amount: 4583
+2024-03-30 16:19:13.546 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №19. a2 balance: 382. Amount: 5286
+2024-03-30 16:19:14.746 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №21. a3 balance: 678. Amount: 4103
+2024-03-30 16:19:15.005 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №20. a1 balance: 114. Amount: 1695
+2024-03-30 16:19:15.278 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №20. a2 balance: 382. Amount: 6121
+2024-03-30 16:19:16.573 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №22. a3 balance: 678. Amount: 2644
+2024-03-30 16:19:16.796 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №21. a1 balance: 114. Amount: 2333
+2024-03-30 16:19:16.895 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №21. a2 balance: 382. Amount: 8812
+2024-03-30 16:19:18.104 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №22. a2 balance: 382. Amount: 9320
+2024-03-30 16:19:18.168 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №23. a3 balance: 678. Amount: 2116
+2024-03-30 16:19:18.307 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №22. a1 balance: 114. Amount: 8448
+2024-03-30 16:19:19.309 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №23. a2 balance: 382. Amount: 5822
+2024-03-30 16:19:19.762 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №24. a3 balance: 678. Amount: 9238
+2024-03-30 16:19:20.262 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №23. a1 balance: 114. Amount: 9329
+2024-03-30 16:19:21.047 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №24. a2 balance: 382. Amount: 4534
+2024-03-30 16:19:21.593 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №25. a3 balance: 678. Amount: 6237
+2024-03-30 16:19:22.086 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №24. a1 balance: 114. Amount: 840
+2024-03-30 16:19:22.396 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №25. a2 balance: 382. Amount: 1646
+2024-03-30 16:19:22.923 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №26. a3 balance: 678. Amount: 6048
+2024-03-30 16:19:23.583 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №26. a2 balance: 382. Amount: 6153
+2024-03-30 16:19:23.671 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №25. a1 balance: 114. Amount: 5755
+2024-03-30 16:19:24.863 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №27. a3 balance: 678. Amount: 4074
+2024-03-30 16:19:25.327 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №27. a2 balance: 382. Amount: 2485
+2024-03-30 16:19:25.640 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №26. a1 balance: 114. Amount: 495
+2024-03-30 16:19:25.888 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №28. a3 balance: 678. Amount: 9616
+2024-03-30 16:19:26.815 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №28. a2 balance: 382. Amount: 6445
+2024-03-30 16:19:27.311 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №27. a1 balance: 114. Amount: 7294
+2024-03-30 16:19:27.727 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №29. a3 balance: 678. Amount: 9994
+2024-03-30 16:19:27.857 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №29. a2 balance: 382. Amount: 4025
+2024-03-30 16:19:29.172 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №28. a1 balance: 114. Amount: 3491
+2024-03-30 16:19:29.209 [pool-1-thread-2] WARN  org.example.TransferTask - Account a2 dont have enough money for Transaction №30. a2 balance: 382. Amount: 2381
+2024-03-30 16:19:29.540 [pool-1-thread-3] WARN  org.example.TransferTask - Account a3 dont have enough money for Transaction №30. a3 balance: 678. Amount: 4513
+2024-03-30 16:19:30.732 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №29. a1 balance: 114. Amount: 1914
+2024-03-30 16:19:32.387 [pool-1-thread-1] WARN  org.example.TransferTask - Account a1 dont have enough money for Transaction №30. a1 balance: 114. Amount: 2177
+2024-03-30 16:19:34.176 [main] INFO  org.example.StarterWorker - All transactions completed.
+2024-03-30 16:19:34.176 [main] INFO  org.example.StarterWorker - Balances of all accounts:
+2024-03-30 16:19:34.178 [main] INFO  org.example.StarterWorker - Account a1: Balance = 114
+2024-03-30 16:19:34.178 [main] INFO  org.example.StarterWorker - Account a2: Balance = 382
+2024-03-30 16:19:34.178 [main] INFO  org.example.StarterWorker - Account a3: Balance = 678
+2024-03-30 16:19:34.178 [main] INFO  org.example.StarterWorker - Account a4: Balance = 19886
+2024-03-30 16:19:34.178 [main] INFO  org.example.StarterWorker - Account a5: Balance = 19618
+2024-03-30 16:19:34.178 [main] INFO  org.example.StarterWorker - Account a6: Balance = 19322
+2024-03-30 16:19:34.178 [main] INFO  org.example.StarterWorker - Account a7: Balance = 10000
+2024-03-30 16:19:34.179 [main] INFO  org.example.StarterWorker - Total balance after transactions: 70000
+2024-03-30 16:19:34.354 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-03-30 16:19:34.362 [main] INFO  org.example.Main - Started Main in 48.106 seconds (JVM running for 48.348)

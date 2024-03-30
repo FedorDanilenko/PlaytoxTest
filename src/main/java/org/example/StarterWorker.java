@@ -26,6 +26,11 @@ public class StarterWorker implements InitializingBean {
             accounts.add(new Account(Integer.toString(i + 1), 10000));
         }
 
+        int totalBalance = accounts.stream()
+            .mapToInt(Account::getMoney)
+            .sum();
+        log.info("Total balance before transactions: {}", totalBalance);
+
         // Создаем потоки
         ExecutorService executorService = Executors.newCachedThreadPool();
         for (int i = 0; i < numAccounts / 2; i++) {
@@ -41,7 +46,14 @@ public class StarterWorker implements InitializingBean {
                 log.error("Thread interrupted", e);
             }
         }
-        log.info("All transactions completed. Shutting down application.");
-        System.exit(0); // Завершаем работу приложения
+        log.info("All transactions completed.");
+        log.info("Balances of all accounts:");
+        accounts.forEach(account -> log.info("Account " + account.getId() +
+                ": Balance = " + account.getMoney()));
+        totalBalance = accounts.stream()
+            .mapToInt(Account::getMoney)
+            .sum();
+        log.info("Total balance after transactions: " + totalBalance);
+
     }
 }
