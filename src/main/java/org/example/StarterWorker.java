@@ -12,10 +12,10 @@ import java.util.concurrent.Executors;
 
 @Component
 @Slf4j
-public class StarterWorker implements InitializingBean {
+public class StarterWorker implements Runnable {
 
     @Override
-    public void afterPropertiesSet() throws Exception {
+    public void run() {
         // Генерируем случайное число счетов от 4 до 10
         Random random = new Random();
         int numAccounts = random.nextInt(7) + 4;
@@ -29,12 +29,17 @@ public class StarterWorker implements InitializingBean {
         int totalBalance = accounts.stream()
             .mapToInt(Account::getMoney)
             .sum();
-        log.info("Total balance before transactions: {}", totalBalance);
+        log.info("Total balance before transactions: " + totalBalance);
 
-        // Создаем потоки
-        ExecutorService executorService = Executors.newCachedThreadPool();
+        // Создаем потоки (Количество потоков = количеству счетов)
+        ExecutorService executorService = Executors.newFixedThreadPool(numAccounts);
         for (int i = 0; i < 30; i++) {
-            executorService.execute(new TransferTask(accounts.get(i), accounts.get(i + numAccounts / 2)));
+            int from = random.nextInt(numAccounts);
+            int to;
+            do {
+                to = random.nextInt(numAccounts);
+            } while (to == from);
+            executorService.execute(new TransferTask(accounts.get(from), accounts.get(to), i + 1));
         }
 
         // Ждем завершения транзакций
@@ -54,6 +59,5 @@ public class StarterWorker implements InitializingBean {
             .mapToInt(Account::getMoney)
             .sum();
         log.info("Total balance after transactions: " + totalBalance);
-
     }
 }
