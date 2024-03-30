@@ -33,7 +33,7 @@ public class StarterWorker implements InitializingBean {
 
         // Создаем потоки
         ExecutorService executorService = Executors.newCachedThreadPool();
-        for (int i = 0; i < numAccounts / 2; i++) {
+        for (int i = 0; i < 30; i++) {
             executorService.execute(new TransferTask(accounts.get(i), accounts.get(i + numAccounts / 2)));
         }
 
