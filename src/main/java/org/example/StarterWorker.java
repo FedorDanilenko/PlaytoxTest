@@ -1,7 +1,6 @@
 package org.example;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -31,7 +30,7 @@ public class StarterWorker implements Runnable {
             .sum();
         log.info("Total balance before transactions: " + totalBalance);
 
-        // Создаем потоки (Количество потоков = количеству счетов)
+        // Создаем потоки (Количество потоков = количество счетов)
         ExecutorService executorService = Executors.newFixedThreadPool(numAccounts);
         for (int i = 0; i < 30; i++) {
             int from = random.nextInt(numAccounts);

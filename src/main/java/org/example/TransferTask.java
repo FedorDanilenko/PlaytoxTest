@@ -12,7 +12,7 @@ class TransferTask implements Runnable {
     private final Account to;
     private final Lock lock = new ReentrantLock();
     private final Random random = new Random();
-    private int num;
+    private final int num;
 
     public TransferTask(Account from, Account to,
                         int num) {
@@ -44,11 +44,11 @@ class TransferTask implements Runnable {
                 lock.unlock();
             }
         } else {
-            log.warn("Could not acquire lock for transaction from " + from.getId() + " to " + to.getId());
+            log.warn("Error transaction №" + num + " " + from.getId() + " -> " + to.getId());
         }
 
         try {
-            Thread.sleep(random.nextInt(1001) + 1000); // Засыпаем от 1000 до 2000 мс
+            Thread.sleep(random.nextInt(1001) + 1000); // Пауза от 1000 до 2000 мс
         } catch (InterruptedException e) {
             log.error("Thread interrupted", e);
         }
